@@ -1,5 +1,7 @@
 services:
   vote:
+    labels:
+      dev.okteto.com/private: "true"
     build: vote
     scale: 2
     ports:
